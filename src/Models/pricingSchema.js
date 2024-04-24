@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const pricingSchema = new mongoose.Schema({
-  organization_id: String,
-  item_id: String,
+  organization_id: Number,
+  item_id: Number,
   zone: {
-    type: Number,
+    type: String,
     enum: ["central", "south", "north", "east", "west"],
     required: true,
   },

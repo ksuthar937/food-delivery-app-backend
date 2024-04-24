@@ -1,7 +1,14 @@
 const mongoose = require("mongoose");
 
 const organizationSchema = new mongoose.Schema({
-  name: String,
+  id: {
+    type: Number,
+    required: true,
+  },
+  name: {
+    type: String,
+    required: true,
+  },
 });
 
 const Organization = mongoose.model("Organization", organizationSchema);
