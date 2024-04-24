@@ -16,3 +16,20 @@ REST API backend for a food delivery app using Node.js
 - Item: { id, type, description }
 - Pricing: { organization_id, item_id, zone, base_distance_in_km: 5,
   km_price: 1.5/1, fix_price: 10 }
+
+
+##### Testing - 
+
+API URL - https://food-delivery-app-backend-11of.onrender.com/api/v1/delivery-price
+
+Method - POST
+
+Body Content - 
+{
+    "zone": "north",
+    "organization_id": 1,
+    "total_distance": 12,
+    "item_type": "non-perishable"
+}
+
+
